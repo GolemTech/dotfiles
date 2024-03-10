@@ -7,6 +7,7 @@
             "label": "lazygit",
             "type": "shell",
             "command": "lazygit",
+            
         },
     ]
 }

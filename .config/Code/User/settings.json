@@ -15,19 +15,6 @@
   "workbench.editorAssociations": {
     "*.lock": "default"
   },
-  // "[python]": {
-  //   "editor.defaultFormatter": "ms-python.black-formatter",
-  //   "editor.codeActionsOnSave": {
-  //     "source.organizeImports": "explicit",
-  //     "source.fixAll": "explicit",
-  //     "source.sortImports": "explicit"
-  //   },
-  // },
-  // "isort.args": [
-  //   "--profile",
-  //   "black"
-  // ],
-  // "editor.formatOnType": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.useLibraryCodeForTypes": true,
   "testing.alwaysRevealTestOnStateChange": true,
@@ -55,24 +42,27 @@
   "workbench.statusBar.visible": true,
   "terminal.integrated.gpuAcceleration": "on",
   "editor.inlayHints.enabled": "onUnlessPressed",
-  "editor.formatOnSave": true,
-  // Whether to enable the Ruff extension.
-  "ruff.enable": true,
-  // Whether to register Ruff as capable of handling `source.fixAll` actions.
-  "ruff.fixAll": true,
-  "ruff.organizeImports": true,
+  "notebook.formatOnSave.enabled": true,
+  
+  // python config -----------------------------------------
+  "ruff.lint.args": ["--config", "ruff.toml"],
+  "ruff.format.args":  ["--config", "ruff.toml"],
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit",
       "source.fixAll": "explicit",
-      "source.sortImports": "explicit"
+      "source.organizeImports": "explicit"
     },
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.rulers": [
+      79,
       100
     ]
   },
+  // --------------------------------------------------------
+
   "yaml.schemas": {
     "file:///home/nestor/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  },
+  "terminal.integrated.defaultLocation": "editor"
 }
