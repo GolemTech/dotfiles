@@ -1,0 +1,78 @@
+{
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Eva Dark",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "python.analysis.autoImportCompletions": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "workbench.iconTheme": "vscode-icons",
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.editorAssociations": {
+    "*.lock": "default"
+  },
+  // "[python]": {
+  //   "editor.defaultFormatter": "ms-python.black-formatter",
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": "explicit",
+  //     "source.fixAll": "explicit",
+  //     "source.sortImports": "explicit"
+  //   },
+  // },
+  // "isort.args": [
+  //   "--profile",
+  //   "black"
+  // ],
+  // "editor.formatOnType": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.useLibraryCodeForTypes": true,
+  "testing.alwaysRevealTestOnStateChange": true,
+  "Notes.notesLocation": "/home/nestor/development/notas",
+  "window.menuBarVisibility": "toggle",
+  "workbench.sideBar.location": "right",
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.fontSize": 15,
+  "window.titleBarStyle": "custom",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.scrollbar.vertical": "auto",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": true,
+  "workbench.statusBar.visible": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.formatOnSave": true,
+  // Whether to enable the Ruff extension.
+  "ruff.enable": true,
+  // Whether to register Ruff as capable of handling `source.fixAll` actions.
+  "ruff.fixAll": true,
+  "ruff.organizeImports": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit",
+      "source.sortImports": "explicit"
+    },
+    "editor.rulers": [
+      100
+    ]
+  },
+  "yaml.schemas": {
+    "file:///home/nestor/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  }
+}

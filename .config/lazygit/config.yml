@@ -5,7 +5,12 @@ gui:
   sidePanelWidth: 0.2 # gives you more space to show things side-by-side
   nerdFontsVersion: "3"
   branchColors:
-    'docs': '#11aaff' # use a light blue for branches beginning with 'docs/'
+    'feature': '#67e92f' # apply color for branches beginning with 'feature/'
+    'bugfix':  '#ffc30c'
+    'fix':  '#ffc30c'
+    'hotfix': '#f71e1e'
+    'main': '#169bff'
+    'develop': '#169bff'
 
 
 git:
@@ -20,8 +25,8 @@ git:
       
 os:
   edit: 'code {{filename}}'
-  editAtLine: 'code --goto {{filename}}:{{line}} && exit'
-  editAtLineAndWait: 'code --goto {{filename}}:{{line}} && exit'
+  editAtLine: 'code --goto {{filename}}:{{line}}'
+  editAtLineAndWait: 'code --goto {{filename}}:{{line}}'
   editInTerminal: false
   openDirInEditor: 'code {{dir}}'
 
@@ -29,6 +34,3 @@ os:
 disableStartupPopups: false
 
 notARepository: skip
-
-
-# comentario

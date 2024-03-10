@@ -1,0 +1,70 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
+        "key": "shift+alt+g",
+        "command": "workbench.action.tasks.terminate",
+        "args": "lazygit"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.action.tasks.runTask",
+        "when": "terminalFocus",
+        "args": "lazygit"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+escape",
+        "command": "workbench.action.terminal.toggleTerminal",
+    },
+    {
+        "key": "ctrl+.",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly",
+        "description": "Comment with Line Comment"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly",
+        "description": "Reformat code"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
+        "description": "Show intention actions and quick-fixes"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus",
+        "description": "Go to Declaration"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "description": "Collapse folders in explorer"
+    },
+    {
+        "key": "shift+alt+g",
+        "command": "workbench.action.tasks.terminate",
+        "args": "lazygit"
+    },
+    {
+        "key": "alt+g",
+        "command": "workbench.action.tasks.runTask",
+        "args": "lazygit"
+    }
+]
