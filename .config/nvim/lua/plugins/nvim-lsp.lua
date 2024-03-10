@@ -1,0 +1,39 @@
+return {
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   ft = "python",
+  --   opts = {
+  --     servers = {
+  --       pyright = {
+  --         settings = {
+  --           pyright = {
+  --             disableLanguageServices = false,
+  --             disableOrganizeImports = true,
+  --             reportMissingModuleSource = "none",
+  --             reportMissingImports = "none",
+  --             reportUndefinedVariable = "none",
+  --           },
+  --           python = {
+  --             analysis = {
+  --               autoSearchPaths = true,
+  --               diagnosticMode = "workspace",
+  --               typeCheckingMode = "basic",
+  --               useLibraryCodeForTypes = true,
+  --             },
+  --           },
+  --         },
+  --       },
+  --       ruff_lsp = {
+  --         on_attach = function(client, _)
+  --           client.server_capabilities.hoverProvider = false
+  --         end,
+  --         init_options = {
+  --           settings = {
+  --             args = {},
+  --           },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
+}
