@@ -1,0 +1,31 @@
+services:
+    "gitlab.com": "gitlab:gitlab.com/quick-development/frontend/quick"
+
+gui:
+  sidePanelWidth: 0.2 # gives you more space to show things side-by-side
+  nerdFontsVersion: "3"
+  branchColors:
+    'docs': '#11aaff' # use a light blue for branches beginning with 'docs/'
+
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+    
+  commitPrefixes:
+    quick: # This is repository folder name
+      pattern: "\\/(ODP-\\d+)_.*"
+      replace: '($1): '
+      
+os:
+  edit: 'code {{filename}}'
+  editAtLine: 'code --goto {{filename}}:{{line}} && exit'
+  editAtLineAndWait: 'code --goto {{filename}}:{{line}} && exit'
+  editInTerminal: false
+  openDirInEditor: 'code {{dir}}'
+
+
+disableStartupPopups: false
+
+notARepository: skip
