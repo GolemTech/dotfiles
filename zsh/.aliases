@@ -1,0 +1,8 @@
+alias ls="exa --long --icons"
+alias my_ip="nmcli device show | grep IP4.ADDRESS | head -1 | awk '{print $2}' | grep -oP '(\d+\.){3}\d+'"
+alias ssh_tunel="ssh -N -L $(my_ip):5432:localhost:5432 -o ServerAliveInterval=60 "
+alias ssh_flower="ssh -N -L :27559:localhost:17559 "
+alias db_harlequin="harlequin --config-path ~/development/harlequin/file.toml "
+# ubuntu
+# alias my_ip="ip -4 -o addr show eth0 | awk '{print \$4}' | grep -oP '(\d+\.){3}\d+'"
+alias restart_ondemand="docker compose -f docker-compose.local.yml down && docker compose -f docker-compose.local.yml up -d &&  docker attach ondemand"
