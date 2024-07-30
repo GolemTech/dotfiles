@@ -66,5 +66,15 @@
         "key": "alt+g",
         "command": "workbench.action.tasks.runTask",
         "args": "lazygit"
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "harlequin"
+    },
+    {
+        "key": "shift+alt+d",
+        "command": "workbench.action.tasks.terminate",
+        "args": "lazygit"
     }
 ]

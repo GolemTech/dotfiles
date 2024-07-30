@@ -7,7 +7,11 @@
             "label": "lazygit",
             "type": "shell",
             "command": "lazygit",
-            
+        },
+        {
+            "label": "harlequin",
+            "type": "shell",
+            "command": "harlequin -a postgres 'postgres://root:abcd1234@192.168.80.11:5432/go_api'"
         },
     ]
 }

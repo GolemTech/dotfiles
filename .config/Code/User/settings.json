@@ -1,10 +1,49 @@
 {
+  // see https://code.visualstudio.com/docs/python/settings-reference
+  // theme
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Eva Dark",
-  "editor.fontFamily": "JetBrains Mono",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.fontFamily": "'JetBrainsMono NF', 'JetBrains Mono'",
+  // change font
   "editor.fontLigatures": true,
+  // Font size
+  "editor.fontSize": 16,
+  "debug.console.fontSize": 16,
+  "debug.console.lineHeight": 28,
+  "terminal.integrated.fontSize": 15,
+  // ui
+  "workbench.editor.limit.value": 5,
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "workbench.editor.enablePreview": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.scrollbar.vertical": "auto",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
-  "python.analysis.autoImportCompletions": true,
+  "editor.dragAndDrop": false,
+  "explorer.enableDragAndDrop": false,
+  "notebook.lineNumbers": "on",
+  "terminal.external.linuxExec": "warp-terminal",
+  "diffEditor.renderGutterMenu": true,
+  "workbench.sideBar.location": "right",
+  "window.title": "${rootName}${separator}${activeRepositoryBranchName}",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.gpuAcceleration": "on",
+  "diffEditor.codeLens": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "git.mergeEditor": true,
+  "diffEditor.renderSideBySide": true,
+  "python.analysis.indexing": true,
+  // gitlab
+  "gitlab-mr.targetRemote": "origin",
+  "gitlab-mr.autoOpenMr": true,
+  "gitlab-mr.useDefaultBranch": false,
+  //
+
   "remote.autoForwardPortsSource": "hybrid",
   "workbench.iconTheme": "vscode-icons",
   "codeium.enableConfig": {
@@ -15,12 +54,11 @@
   "workbench.editorAssociations": {
     "*.lock": "default"
   },
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.supportRestructuredText": true,
+  "python.analysis.typeCheckingMode": "standard",
   "python.analysis.useLibraryCodeForTypes": true,
   "testing.alwaysRevealTestOnStateChange": true,
   "Notes.notesLocation": "/home/nestor/development/notas",
-  "window.menuBarVisibility": "toggle",
-  "workbench.sideBar.location": "right",
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
@@ -30,23 +68,32 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.fontSize": 15,
-  "window.titleBarStyle": "custom",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "smooth",
-  "editor.scrollbar.vertical": "auto",
-  "editor.overviewRulerBorder": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "breadcrumbs.enabled": false,
-  "editor.glyphMargin": true,
-  "workbench.statusBar.visible": true,
-  "terminal.integrated.gpuAcceleration": "on",
+
   "editor.inlayHints.enabled": "onUnlessPressed",
   "notebook.formatOnSave.enabled": true,
-  
-  // python config -----------------------------------------
-  "ruff.lint.args": ["--config", "ruff.toml"],
-  "ruff.format.args":  ["--config", "ruff.toml"],
+  "vsintellicode.python.completionsEnabled": true,
+  // python config
+  "python.envFile": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.analysis.stubPath": "typings",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.gotoDefinitionInStringLiteral": true,
+  "python.analysis.extraPaths": [
+    "~/Repos/quick/apps/ondemand-api/.venv/lib/python3.11/site-packages"
+  ],
+  "python.languageServer": "Pylance",
+  "ruff.lint.enable": true,
+  "ruff.lint.args": [
+    "--config",
+    "~/Repos/quick/apps/ondemand-api/ruff.toml"
+  ],
+  "ruff.format.args": [
+    "--config",
+    "~/Repos/quick/apps/ondemand-api/ruff.toml"
+  ],
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -55,14 +102,46 @@
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.rulers": [
-      79,
+      // 79,
       100
     ]
   },
-  // --------------------------------------------------------
+  // "python.analysis.inlayHints.variableTypes": true,
+  // "python.analysis.inlayHints.callArgumentNames": "all",
+  // "python.analysis.inlayHints.functionReturnTypes": true,
+  "terminal.integrated.defaultLocation": "editor",
+  "python.analysis.packageIndexDepths": [
+    {
+      "name": "django",
+      "depth": 5
+    },
+  ],
+  // ----------------------------------------------------------------------------------------------------------------
 
-  "yaml.schemas": {
-    "file:///home/nestor/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+
+  "explorer.autoReveal": true,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.autoLockGroups": {
+    "jupyter-notebook": true
   },
-  "terminal.integrated.defaultLocation": "editor"
+
+  "gitlens.views.branches.files.layout": "tree",
+  // git prefix
+  "gitPrefix.isSuffix": false,
+  "gitPrefix.pattern": "(\\w+)/(\\w+-\\d+)_(.*)",
+  "gitPrefix.replacement": "$1($2): $3",
+  "workbench.activityBar.location": "default",
+  // "window.customTitleBarVisibility": "auto",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.experimental.showMoves": true,
+  "scm.experimental.showHistoryGraph": true,
+  "window.menuBarVisibility": "compact",
+  "notebook.experimental.cellChat": true,
+  "notebook.formatOnCellExecution": true,
+  "notebook.outline.showCodeCells": true,
+  "terminal.integrated.fontFamily": "'JetBrainsMono NF'",
+  "python.defaultInterpreterPath": "/home/nestor/Repos/quick/apps/ondemand-api/.venv"
 }

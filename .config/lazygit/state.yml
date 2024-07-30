@@ -1,9 +1,16 @@
-lastupdatecheck: 0
+lastupdatecheck: 1722278534
 recentrepos:
-- /home/nestor/dotfiles
-- /home/nestor/Repos/quick
+    - /home/nestor/dotfiles
+    - /home/nestor/Repos/quick
 startuppopupversion: 5
+lastversion: 0.43.1
 customcommandshistory:
-- w
+    - w
 hidecommandlog: false
 ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
