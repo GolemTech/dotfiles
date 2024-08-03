@@ -143,5 +143,6 @@
   "notebook.formatOnCellExecution": true,
   "notebook.outline.showCodeCells": true,
   "terminal.integrated.fontFamily": "'JetBrainsMono NF'",
-  "python.defaultInterpreterPath": "/home/nestor/Repos/quick/apps/ondemand-api/.venv"
+  "python.defaultInterpreterPath": "/home/nestor/Repos/quick/apps/ondemand-api/.venv",
+  "diffEditor.experimental.useTrueInlineView":true
 }
